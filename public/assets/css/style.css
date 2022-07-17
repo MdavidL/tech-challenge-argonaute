@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Poppins-Light", Verdana, Helvetica, sans-serif;
+}
+body {
+    font-family: "Poppins";
+    background-color: rgba(239, 239, 239, 1);
+    padding: 0;
+    margin: 0;
+}
+section {
+    margin-top: 10em;
+    text-align: center;
+}
+h1 {
+    font-weight: 500;
+}
+input {
+    background-color: rgba(222, 222, 222, 1);
+    width: 40em;
+    height: 2em;
+    margin-top: 1em;
+    border: 1px solid rgba(164, 164, 164, 1);
+}
+button {
+    background-color: rgba(239, 239, 239, 1);
+    width: 10em;
+    height: 2em;
+    margin: 4em 0 10em;
+    border: 1px solid rgba(247, 108, 108, 1);
+    border-radius: 50px;
+}
+button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(247, 108, 108, 1);
+}
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li {
+    color: rgba(247, 108, 108, 1);
+    margin: 3em;
+}
+.label {
+    margin-top: 2em;
+}

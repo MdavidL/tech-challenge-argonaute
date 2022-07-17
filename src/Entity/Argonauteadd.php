@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=ArgonauteRepository::class)
  */
-class Argonaute
+class Argonauteadd
 {
     /**
      * @ORM\Id

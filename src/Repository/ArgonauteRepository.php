@@ -2,45 +2,29 @@
 
 namespace App\Repository;
 
-use App\Entity\Argonaute;
+use App\Entity\Argonauteadd;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Argonaute>
+ * @extends ServiceEntityRepository<Argonauteadd>
  *
- * @method Argonaute|null find($id, $lockMode = null, $lockVersion = null)
- * @method Argonaute|null findOneBy(array $criteria, array $orderBy = null)
- * @method Argonaute[]    findAll()
- * @method Argonaute[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Argonauteadd|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Argonauteadd|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Argonauteadd[]    findAll()
+ * @method Argonauteadd[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class ArgonauteRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Argonaute::class);
+        parent::__construct($registry, Argonauteadd::class);
     }
 
-    public function add(Argonaute $entity, bool $flush = false): void
-    {
-        $this->getEntityManager()->persist($entity);
 
-        if ($flush) {
-            $this->getEntityManager()->flush();
-        }
-    }
-
-    public function remove(Argonaute $entity, bool $flush = false): void
-    {
-        $this->getEntityManager()->remove($entity);
-
-        if ($flush) {
-            $this->getEntityManager()->flush();
-        }
-    }
 
 //    /**
-//     * @return Argonaute[] Returns an array of Argonaute objects
+//     * @return Argonauteadd[] Returns an array of Argonauteadd objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -54,7 +38,7 @@ class ArgonauteRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Argonaute
+//    public function findOneBySomeField($value): ?Argonauteadd
 //    {
 //        return $this->createQueryBuilder('a')
 //            ->andWhere('a.exampleField = :val')

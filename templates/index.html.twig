@@ -1,0 +1,42 @@
+<!--fichier en twig pour afficher le HTML sur le navigateur-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block metatitle %}Les Argonautes{% endblock metatitle%}</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+</head>
+<body>
+
+{% block main %}
+
+    <section id="content">
+        <div class="window">
+            {{ form_start(argonauteForm) }}
+            <div>
+                <h1 class="title">Ajouter des Argonautes</h1>
+            </div>
+            <div class="label">
+                {{ form_label(argonauteForm.name, "Nom de l'Argonaute:") }}
+            </div>
+            <div class="widget">
+                {{ form_widget(argonauteForm.name) }}
+            </div>
+            {{ form_end(argonauteForm) }}
+        </div>
+        <div class="list">
+            <ul>
+                <li>Jean</li>
+                <li>Robert</li>
+                <li>Alain</li>
+            </ul>
+        </div>
+    </section>
+
+{% endblock main %}
+
+</body>
+</html>
