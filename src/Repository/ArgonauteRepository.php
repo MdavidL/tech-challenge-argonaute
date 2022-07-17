@@ -23,28 +23,19 @@ class ArgonauteRepository extends ServiceEntityRepository
 
 
 
-//    /**
-//     * @return Argonauteadd[] Returns an array of Argonauteadd objects
-//     */
-//    public function findByExampleField($value): array
+//    public function searchByTitle($word)
 //    {
-//        return $this->createQueryBuilder('a')
-//            ->andWhere('a.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('a.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
-
-//    public function findOneBySomeField($value): ?Argonauteadd
-//    {
-//        return $this->createQueryBuilder('a')
-//            ->andWhere('a.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
+//        //Je fais appelle à la méthode createQueryBuilder
+//        // et confère un alias à celle-ci
+//      $queryBuilder = $this->createQueryBuilder('book');
+//        // Grâce à Doctrine, je vais pouvoir générer une requête SQL
+//        //qui va récupérer les données de ma table book
+//      $query = $queryBuilder->select('book')
+//          ->where('book.title LIKE :word')
+//          ->setParameter('word', '%'.$word.'%')
+//          ->getQuery();
+//        //je demande de récupérer les données SQL et
+//        //de me les retourner
+//      return $query->getResult();
 //    }
 }

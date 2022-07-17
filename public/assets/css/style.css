@@ -10,10 +10,15 @@ body {
 section {
     margin-top: 10em;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 h1 {
     font-weight: 500;
 }
+/*Barre d'ajout d'un argonaute*/
 input {
     background-color: rgba(222, 222, 222, 1);
     width: 40em;
@@ -25,7 +30,7 @@ button {
     background-color: rgba(239, 239, 239, 1);
     width: 10em;
     height: 2em;
-    margin: 4em 0 10em;
+    margin: 4em 0 5em;
     border: 1px solid rgba(247, 108, 108, 1);
     border-radius: 50px;
 }
@@ -33,16 +38,16 @@ button:hover {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(247, 108, 108, 1);
 }
-ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-li {
-    color: rgba(247, 108, 108, 1);
-    margin: 3em;
-}
 .label {
     margin-top: 2em;
+}
+/*Style de la liste*/
+.list {
+    margin-left: 8em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list__card  {
+    width: 32em;
+    color: rgba(247, 108, 108, 1);
 }

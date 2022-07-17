@@ -28,13 +28,13 @@
             {{ form_end(argonauteForm) }}
         </div>
         <div class="list">
-            <ul>
-                <li>Jean</li>
-                <li>Robert</li>
-                <li>Alain</li>
-            </ul>
+            {% for argonaute  in argonautes %}
+                <span class="list__card">{{ argonaute.name }}</span>
+            {% endfor %}
         </div>
     </section>
+
+
 
 {% endblock main %}
 
