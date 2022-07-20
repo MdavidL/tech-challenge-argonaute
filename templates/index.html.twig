@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block metatitle %}Les Argonautes{% endblock metatitle%}</title>
     <title>Title</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/styl.css') }}" />
 </head>
 <body>
 
@@ -26,11 +26,13 @@
                 {{ form_widget(argonauteForm.name) }}
             </div>
             {{ form_end(argonauteForm) }}
-        </div>
-        <div class="list">
-            {% for argonaute  in argonautes %}
-                <span class="list__card">{{ argonaute.name }}</span>
-            {% endfor %}
+            <div class="block">
+                <div class="list">
+                    {% for argonaute  in argonautes %}
+                        <span class="list__card">{{ argonaute.name }}</span>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </section>
 

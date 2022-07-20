@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 section {
+    width: 100vw;
     margin-top: 10em;
     text-align: center;
     display: flex;
@@ -43,11 +44,11 @@ button:hover {
 }
 /*Style de la liste*/
 .list {
-    margin-left: 8em;
+    max-width: 50em;
     display: flex;
     flex-wrap: wrap;
 }
-.list__card  {
-    width: 32em;
+.list__card {
     color: rgba(247, 108, 108, 1);
+    width: 16.6em ;
 }
